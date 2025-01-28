@@ -1,69 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of [Your Name]">
-  <title>Noah Diplarakis | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my online portfolio. Here are my projects and skills.</p>
+    </header>
+
     <nav>
-      <a href="#" class="logo">Noah Diplarakis</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </ul>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
 
-  <main>
-    <section id="hero">
-      <h1>Hello, I'm Noah Diplarakis</h1>
-      <p>Specialty</p>
-      <a href="#projects" class="btn">View My Projects</a>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I was born in Laval</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>Project 1</h3>
-          <p>Lorem da.wd.ad.</p>
-          <a href="#" target="_blank" class="btn">View Project</a>
+    <div class="container">
+      <section id="about" data-aos="fade-right" class="about-container">
+        <div class="profile-image-wrapper">
+            <img id="profileimage" src="images/ProfileImage.jpg" alt="Profile Image">
         </div>
-        <div class="project">
-          <h3>Project 2</h3>
-          <img src="images/project2.png">
-          <p>Lorem .daw.dwa.d</p>
-          <a href="#" target="_blank" class="btn">View Project</a>
+        <div class="about-description">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, officiis eos ipsa vel non voluptas exercitationem placeat? Excepturi ducimus explicabo provident incidunt fugiat. Quis esse ut enim sequi vero dolores.</p>
         </div>
-      </div>
     </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-      </ul>
-    </section>
-
     
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Noah Diplarakis All rights reserved.</p>
-  </footer>
+        <section id="skills" data-aos="fade-up">
+            <h2>Skills & Tools</h2>
+            <p>Here are some of the technologies and tools I work with:</p>
 
-  <script src="script.js"></script>
+            <div class="skills-category" data-aos="flip-left">
+                <h3>Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/java.png" alt="Java" class="skill-icon">
+                        <p>Java</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/sql.png" alt="SQL" class="skill-icon">
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/javascript.png" alt="JavaScript" class="skill-icon">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/python.png" alt="Python" class="skill-icon">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/kotlin.png" alt="Kotlin" class="skill-icon">
+                        <p>Kotlin</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/csharp.png" alt="C#" class="skill-icon">
+                        <p>C#</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category" data-aos="flip-left">
+                <h3>Frameworks</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/react.png" alt="React" class="skill-icon">
+                        <p>React.js</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/node.png" alt="Node.js" class="skill-icon">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/express-js.png" alt="Express.js" class="skill-icon">
+                        <p>Express.js</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/flask.png" alt="Flask" class="skill-icon">
+                        <p>Flask</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/monogame.png" alt="Monogame" class="skill-icon">
+                        <p>Monogame</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category" data-aos="flip-left">
+                <h3>Developer Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/git.png" alt="Git" class="skill-icon">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/visualstudios.png" alt="VSCode" class="skill-icon">
+                        <p>VSCode</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/notepad-logo.png" alt="Notepad++" class="skill-icon">
+                        <p>Notepad++</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/androidstudio.webp" alt="Android Studio" class="skill-icon">
+                        <p>Android Studio</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/office.png" alt="Microsoft Office" class="skill-icon">
+                        <p>Microsoft Office</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" data-aos="fade-left">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email or connect with me on social media:</p>
+            <ul style="list-style: none; padding: 0; text-align: center;">
+                <li style="margin: 10px 0;">
+                    <a href="mailto:diplarakisn@gmail.com" style="color: #4a90e2; text-decoration: none; font-weight: bold;">
+                        📧 diplarakisn@gmail.com
+                    </a>
+                </li>
+                <li style="margin: 10px 0;">
+                    <a href="https://github.com/rebolto" target="_blank" style="color: #4a90e2; text-decoration: none; font-weight: bold;">
+                        🐙 GitHub
+                    </a>
+                </li>
+                <li style="margin: 10px 0;">
+                    <a href="https://www.linkedin.com/in/noah-diplarakis-726b18339/" target="_blank" style="color: #4a90e2; text-decoration: none; font-weight: bold;">
+                        💼 LinkedIn
+                    </a>
+                </li>
+                <li style="margin: 10px 0;">
+                    <a href="https://twitter.com/yourusername" target="_blank" style="color: #4a90e2; text-decoration: none; font-weight: bold;">
+                        🐦 Twitter
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Noah Diplarakis. All rights reserved | <a id="backa" href="#">Back to top</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 </body>
 </html>
